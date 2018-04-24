@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-size: 0;
 }
 
@@ -23,8 +25,17 @@ header, footer{
     letter-spacing: 10px;
 }
 
+footer {
+    position: absolute;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 .main-content {
     min-height: 100%;
+    padding-bottom: 50px;
 }
 
 .options{
@@ -201,7 +212,6 @@ main{
 
 footer{
     text-align: right;
-    margin-top: -50px;
 }
 
 input[name="cardSkirts"] + span, input[name="cardFronts"] + span {
@@ -213,7 +223,7 @@ input[name="cardSkirts"] + span, input[name="cardFronts"] + span {
     cursor: pointer;
     border: 5px solid white;
     border-radius: 10px;
-    background: url(../images/cards.jpg);
+    background: url(../images/new.png);
     opacity: 0.7;
 }
 
@@ -222,26 +232,26 @@ input[type="radio"] {
 }
 
 input[value="1"] + span {
-    background-position: -1423px -2px;
+    background-position: 0px 0px;
 }
 input[value="2"] + span {
-    background-position: -1425px -128px;
+    background-position: -100px 0px;
 }
 input[value="3"] + span {
-    background-position: -1420px -260px;
+    background-position: -199px 0px;
 }
 
 input[value="4"] + span {
-    background-position: -3px 0;
+    background-position: -100px -140px;
     border-color: black;
 }
 input[value="5"] + span {
-    background-position: 0 -135px;
+    background-position: -100px -300px;
     border-color: black;
 
 }
 input[value="6"] + span {
-    background-position: -3px -260px;
+    background-position: -1500px -500px;
     border-color: black;
 }
 
@@ -256,8 +266,8 @@ input[type="radio"]:hover + span{
 }
 
 .cardsChecker {
-    width: 80px;
-    height: 130px;
+    width: 90px;
+    height: 135px;
     display: inline-block;
     position: relative;
     margin: 15px auto;
@@ -289,8 +299,8 @@ input[type="radio"]:hover + span{
 
 .card {
     display: inline-block;
-    width: 82px;
-    height: 132px;
+    width: 80px;
+    height: 125px;
     margin: 10px;
     transition: 0.5s;
     transform-style: preserve-3d;
@@ -302,8 +312,7 @@ input[type="radio"]:hover + span{
     left: 0;
     width: 100%;
     height: 100%;
-    border: 5px solid darkred;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .backHide {

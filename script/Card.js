@@ -4,11 +4,11 @@ function Card(frontCords, skirtCords, index){
     card.setAttribute('data-index', index);
     let cardFace = document.createElement('div');
     cardFace.classList.add('front');
-    cardFace.style.background = 'url(images/cards.jpg)' + frontCords;
+    cardFace.style.background = 'url(images/new.png)' + frontCords;
     card.appendChild(cardFace);
     let cardBack = document.createElement('div');
     cardBack.classList.add('back');
-    cardBack.style.background = 'url(images/cards.jpg) ' + skirtCords;
+    cardBack.style.background = 'url(images/new.png) ' + skirtCords;
     card.appendChild(cardBack);
     this.card = card;
 }
