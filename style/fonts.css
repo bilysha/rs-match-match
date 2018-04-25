@@ -1,14 +1,4 @@
 @font-face {
-    font-family: 'alfaSlab';
-    src: url('../fonts/luckiestguy-regular-webfont.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'indie';
-    src: url('../fonts/indieflower-webfont.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'vast';
-    src: url('../fonts/vastshadow-regular-webfont.woff2') format('woff2');
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-regular.woff2') format('woff2');
 }

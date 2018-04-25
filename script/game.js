@@ -8,12 +8,10 @@ function onLoad() {
     let endGame = document.getElementsByClassName('winner')[0];
     let movesCounter = document.getElementsByClassName('moves')[0];
     let timer = document.getElementsByClassName('timer')[0];
-    let gameOptionsBtn = document.getElementsByClassName('showLeftMenu')[0];
     let winnerSection = document.getElementsByClassName('winner');
 
     document.getElementById('gameStart').addEventListener('click', gameInit);
     endGame.addEventListener('click', resetGame);
-    gameOptionsBtn.addEventListener('click', showOptions);
     playField.addEventListener('click',onClickBoard);
 
     function getParams(value) {

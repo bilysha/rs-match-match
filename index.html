@@ -16,10 +16,42 @@
                     <h1>Match Match Game</h1>
                 </div>
             </header>
-            <div class="wrapper">
-                <main>
-                    <button class="showLeftMenu" >game options</button>
-                    <section class="options optionsShow">
+                <main class="wrapper">
+                    <section class="game">
+                        <section class="playField clearfix hide">
+                            <p class='countMoves'> moves : <span class='moves'>0</span></p>
+                            <p class='timerZone'> time : <span class='timer'>00,00</span></p>
+                            <div class="board" id="boardCreated"></div>
+                        </section>
+                        <section class="winner hide">
+                            <p>All pairs found! Good Job!</p>
+                            <p>You needed <span class="endMoves"></span> moves and <span class="endTime"></span> of time</p>
+                            <button id="gameEnd">OK</button> 
+                        </section>
+                        <section class="mainScreen show" >
+                            <p class="helloPlayer">Hi, mate!</p>
+                            <p class="helloPlayer againYou">Welcome to the match-match game.</p>
+                            <p class="legend">About :</p>
+                            <p class="someInformation">Memory is a counter game where the object is to find pairs. When the game begins, all pictures are hidden.</p>
+                            <p class="legend">Rules :</p>
+                            <article class="gameRules">
+                                <p>1. Select two cards to try to match the pictures.</p>
+                                <p>2. If you match the pictures, they will be disappear and you can go again.</p>
+                                <p>3. If they don't match, you also may select two cards to try to match the pictures again :)</p>
+                                <p>4. When all the cards disappear, you will win !</p>
+                                <p>5. Have Fun !</p>
+                            </article>
+                            <figure>
+                                <img src="images/logo.png" alt="game_logo">
+                                <figcaption>match-match-game(inc)</figcaption>
+                            </figure>
+                        </section>
+                    </section>
+                    <section class="ready">
+                        <p>So, if you are ready </p>
+                        <button id="gameStart">Start Game</button>
+                    </section>
+                    <section class="options">
                         <article class="difficulty">
                             <p class="legend">Difficulty :</p>
                             <label><input type="radio" name="difficult" value="10" checked><span></span>5 x 2 .</label>
@@ -31,49 +63,21 @@
                             <label class="cardsChecker"><input type="radio" name="cardSkirts" value="1"><span></span></label>
                             <label class="cardsChecker"><input type="radio" name="cardSkirts" value="2"><span></span></label>
                             <label class="cardsChecker"><input type="radio" name="cardSkirts" value="3" checked><span></span></label>
-                            <p class="legend">cards front :</p>
+                        </article>
+                        <article>
+                            <p class="legend">Cards Front :</p>
                             <label class="cardsChecker"><input type="radio" name="cardFronts" value="4"><span></span></label>
                             <label class="cardsChecker"><input type="radio" name="cardFronts" value="5"><span></span></label>
                             <label class="cardsChecker"><input type="radio" name="cardFronts" value="6" checked><span></span></label>
                         </article>
-                        <input type="button" name="startGame" value="Start Game" id="gameStart">
-                    </section>
-                    <section class="playField clearfix hide">
-                        <p class='countMoves'> moves : <span class='moves'>0</span></p>
-                        <p class='timerZone'> time : <span class='timer'>00,00</span></p>
-                        <div class="board" id="boardCreated"></div>
-                    </section>
-                    <section class="winner hide">
-                        <p>all pairs found! good job</p>
-                        <p>you needed <span class="endMoves"></span> moves and <span class="endTime"></span> of time</p>
-                        <input type="button" name="confirm" value="OK"  id="gameEnd">
-                    </section>
-                    <section class="mainScreen show" >
-                        <p class="helloPlayer">Hi, mate!</p>
-                        <p class="helloPlayer againYou">Welcome to the match-match game.</p>
-                        <p class="legend">about :</p>
-                        <p class="someInformation">Memory is a counter game where the object is to find pairs. When the game begins, all pictures are hidden.</p>
-                        <p class="legend">Rules :</p>
-                        <article class="gameRules">
-                            <p>1. Select two cards to try to match the pictures.</p>
-                            <p>2. If you match the pictures, they will be disappear and you can go again.</p>
-                            <p>3. If they don't match, you also may select two cards to try to match the pictures again :)</p>
-                            <p>4. When all the cards disappear, you will win !</p>
-                            <p>5. Have Fun !</p>
-                        </article>
-                        <figure>
-                            <img src="images/logo.png" alt="game_logo">
-                            <figcaption>match-match-game(inc)</figcaption>
-                        </figure>
                     </section>
                 </main>
-            </div>
         </div>
         <footer>
             <div class="wrapper">
                 <h2>Avesome Game Ltd.</h2>
             </div>
-        </footer>       
+        </footer>
     </div>
 <script type="text/javascript" src="script/constants.js"></script>
 <script type="text/javascript" src="script/Card.js"></script>
