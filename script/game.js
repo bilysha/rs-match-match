@@ -120,6 +120,7 @@ function onLoad() {
     }
 
     function gameInit() {
+        window.location.hash="game";
         resetGame();
         let difficultValue = getParams('difficult');
         let skirtsCords = choiceArray[getParams('cardSkirts')];
