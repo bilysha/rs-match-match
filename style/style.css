@@ -5,43 +5,46 @@
     font-size: 0;
 }
 
-body {
-    background: url(../images/body_bg.jpg);
-    height: 100%;
-}
-
+body,
 html {
     height: 100%;
 }
 
-header, footer{
+body {
+    background-color: #c7c7c7;
+}
+
+.container {
+    position:  relative;
+    min-height: 100%;
+}
+
+.main-content {
+    padding-bottom: 50px;
+}
+
+header, footer {
     line-height: 50px;
     height: 50px;
-    background-color: white;
+    background-color: #383838;
     font-family: alfaSlab;
     font-size: 35px;
     font-weight: 700;
-    color: darkred;
+    color: #fff;
     letter-spacing: 10px;
 }
 
 footer {
-    position: absolute;
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
 }
 
-.main-content {
-    min-height: 100%;
-    padding-bottom: 50px;
-}
-
 .options{
     height: 0;
     width: 320px;
-    background-color: white;
+    background-color: #383838;
     display: inline-block;
     overflow: hidden;
     position: absolute;
@@ -50,7 +53,7 @@ footer {
     font-family: indie;
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: #fff;
     transition: height 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -69,18 +72,18 @@ footer {
     font-family: alfaSlab;
     font-size: 25px;
     font-weight: 700;
-    color: white;
+    color: #fff;
     letter-spacing: 10px;
     border: none;
     width: 320px;
-    background-color: darkred;
+    background-color: #383838;
     float: left;
+    cursor: pointer;
 }
 
 .showLeftMenu:hover {
-    color:darkred;
-    background-color: white;
-    cursor: pointer;
+    color:#383838;
+    background-color: #fff;
 }
 
 .difficulty label {
@@ -91,11 +94,11 @@ footer {
 }
 
 .difficulty label:hover{
-    background-color: rgba(179,0,0,0.2)
+    background-color: #c7c7c7
 }
 
 input[name="difficult"]:checked {
-    color:darkred;
+    color:#fff;
 }
 
 input[name="difficult"] + span {
@@ -105,12 +108,12 @@ input[name="difficult"] + span {
     height: 10px;
     display: block;
     cursor: pointer;
-    background-color: black;
+    background-color: #c7c7c7;
     border-radius: 10px;
 }
 
 input[name="difficult"]:checked + span {
-    background-color: darkred;
+    background-color: #fff;
 }
 
 input[value="10"] + span {
@@ -135,7 +138,7 @@ label:hover{
     padding-left: 20px;
     font-family: indie;
     font-size: 25px;
-    color: white;
+    color: #c7c7c7;
 }
 
 figure img {
@@ -153,25 +156,26 @@ figcaption {
 [name="startGame"] {
     font-family: alfaSlab;
     margin: 20px 0 50px 0;
-    background-color: darkred;
-    color: white;
+    background-color: #fff;
+    color: #c7c7c7;
     width: 150px;
     height: 40px;
     font-size: 20px;
     text-align: center;
-    border: 5px solid darkred;
+    border: 5px solid #fff;
+    cursor: pointer;
 }
 
 [name="startGame"]:hover {
     background-color: white;
-    color: darkred;
-    cursor: pointer;
+    color: #383838;
 }
 
 .legend{
     margin: 20px 0;
     text-align: center;
-    color: black;
+    color: #fff;
+    letter-spacing: 5px;
     font-family: alfaSlab;
     font-size: 30px;
 }
@@ -182,7 +186,7 @@ figcaption {
     left: 550px;
     height: 750px;
     width: 1200px;
-    background-color: darkred;
+    background-color: #383838;
     display: inline-block;
     padding-top: 40px;
     opacity: 1;
@@ -191,7 +195,7 @@ figcaption {
 .playField{
     padding-top: 50px;
     position: absolute;
-    background-color: darkred;
+    background-color: #383838;
     height: 750px;
     width: 1200px;
     top: 50px;
@@ -224,7 +228,7 @@ input[name="cardSkirts"] + span, input[name="cardFronts"] + span {
     border: 5px solid white;
     border-radius: 10px;
     background: url(../images/new.png);
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 input[type="radio"] {
@@ -243,20 +247,16 @@ input[value="3"] + span {
 
 input[value="4"] + span {
     background-position: -100px -140px;
-    border-color: black;
 }
 input[value="5"] + span {
     background-position: -100px -300px;
-    border-color: black;
 
 }
 input[value="6"] + span {
     background-position: -1500px -500px;
-    border-color: black;
 }
 
 input[type="radio"]:checked + span {
-    border: 5px solid darkred;
     border-radius: 10px;
     opacity: 1;
 }
@@ -276,7 +276,7 @@ input[type="radio"]:hover + span{
 .countMoves, .timerZone {
     font-family: alfaSlab;
     font-size: 30px;
-    color: white;
+    color: #fff;
 }
 
 .countMoves {
@@ -294,7 +294,7 @@ input[type="radio"]:hover + span{
     margin: 30px auto;
     width: 1150px;
     height: 650px;
-    background-color: white;
+    background-color: #c7c7c7;
 }
 
 .card {
@@ -340,7 +340,7 @@ input[type="radio"]:hover + span{
 }
 
 .winner {
-    background-color: darkred;
+    background-color: #383838;
     width: 1200px;
     height: 200px;
     position: absolute;
@@ -350,7 +350,7 @@ input[type="radio"]:hover + span{
 }
 
 .winner p {
-    color: white;
+    color: #fff;
     font-family: alfaSlab;
     font-size: 30px;
     letter-spacing: 10px;
@@ -361,7 +361,7 @@ input[type="radio"]:hover + span{
     width: 200px;
     height: 50px;
     background-color: white;
-    color: darkred;
+    color: #c7c7c7;
     border: none;
     font-size: 30px;
     text-align: center;
@@ -369,11 +369,11 @@ input[type="radio"]:hover + span{
     letter-spacing: 5px;
     font-weight: bold;
     margin-top: 20px;
-
+    cursor: pointer;
 }
 
 .winner input:hover {
-    cursor: pointer;
+    color: #383838;
 }
 
 .match {
@@ -385,17 +385,15 @@ input[type="radio"]:hover + span{
 .helloPlayer {
     font-family: alfaSlab;
     font-size: 40px;
-    color: white;
+    color: #fff;
     margin-bottom: 20px;
     letter-spacing: 10px;
 }
 
-.clearfix::after, .clearfix::before {
-    content: ".";
-    display: block;
-    height: 0;
+.clearfix::after {
+    content: "";
     clear: both;
-    visibility: hidden;
+    display: table;
 }
 
 .show{
